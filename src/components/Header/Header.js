@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import logo from "../../images/logo.png";
 
 const Header = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   let nav = document.querySelector(".navigation-wrap");
-  window.onscroll = () => {
+  window.onscroll = function() {
     if (document.documentElement.scrollTop > 20) {
       nav.classList.add("scroll-on");
     } else {
@@ -83,10 +94,10 @@ const Header = () => {
                   Sequi fugiat illo voluptates asperiores in minus.
                 </p>
                 <div className="mt-4">
-                  <button className="main-btn">
+                  <button data-aos="fade-right" className="main-btn">
                     Order Now <i class="fa-solid fa-cart-shopping ps-3"></i>
                   </button>
-                  <button className="white-btn ms-lg-4 mt-lg-0 mt-4">
+                  <button data-aos="fade-left" className="white-btn ms-lg-4 mt-lg-0 mt-4">
                     Order Now <i class="fa-solid fa-angle-right ps-3"></i>
                   </button>
                 </div>

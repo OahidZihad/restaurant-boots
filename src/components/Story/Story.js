@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Story = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <section id="story">
+    <section data-aos="flip-up" id="story">
       <div className="story-section">
         <div className="container">
           <div className="row">

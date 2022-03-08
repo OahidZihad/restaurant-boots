@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import review1 from "../../images/review/review-1.jpg";
 import review2 from "../../images/review/review-2.jpg";
 
 const Testimonial = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
   return (
     <section id="testimonial">
       <div className="wrapper testimonial-section">
@@ -14,6 +23,7 @@ const Testimonial = () => {
           <div className="row">
             <div className="col-sm-12 col-lg-10 offset-lg-1">
               <div
+                data-aos="zoom-in"
                 id="carouselExampleCaptions"
                 class="carousel slide"
                 data-bs-ride="carousel"

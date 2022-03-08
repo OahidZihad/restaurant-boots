@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import CountUp from 'react-countup';
 
 const Counter = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
   return (
-    <section id="counter">
+    <section data-aos="fade-up" id="counter">
       <section className="counter-section">
         <div className="container">
           <div className="row text-center">

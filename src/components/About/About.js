@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import img1 from "../../images/img/img-1.png";
 import img2 from "../../images/img/img-2.png";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <section id="about">
       <div className="about-section wrapper">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-7 col-md-12 mb-lg-0 mb-5">
+            <div data-aos="fade-right" className="col-lg-7 col-md-12 mb-lg-0 mb-5">
               <div className="card border-0">
                 <img src={img1} class="img-fluid" alt="" />
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 text-sec">
+            <div data-aos="fade-left" className="col-lg-5 col-md-12 text-sec">
               <h2>
                 We pride ourselves on making real food from the best
                 ingredients.
@@ -29,7 +38,7 @@ const About = () => {
         </div>
         <div className="container food-type">
           <div className="row align-items-center">
-            <div className="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+            <div data-aos="fade-right" className="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
               <h2>
                 We make everything by hand with the best possible ingredients
               </h2>
@@ -48,7 +57,7 @@ const About = () => {
               </ul>
               <button className="main-btn mt-4">Learn More</button>
             </div>
-            <div className="col-lg-7 col-md-12">
+            <div data-aos="fade-left" className="col-lg-7 col-md-12">
               <div className="card border-0">
                 <img
                   src={img2}
