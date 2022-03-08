@@ -1,3 +1,3 @@
 # Foodies-Boots
 
-## [https://foodies-boots.netlify.app/](https://foodies-boots.netlify.app/)
+## [https://boots-foodies.netlify.app/](https://boots-foodies.netlify.app/)
