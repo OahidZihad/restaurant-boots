@@ -11,10 +11,10 @@ const BookFood = () => {
     Aos.init({ duration: 500 });
   }, []);
   return (
-    <section id="book-food">
-      <div className="book-food">
-        <div className="container book-food-text">
-          <div data-aos="flip-left" className="row text-center">
+    <section id="book-food" style={{overflowX:"hidden"}}>
+      <div className="book-food" style={{overflowX:"hidden"}}>
+        <div className="container book-food-text" style={{overflowX:"hidden"}}>
+          <div data-aos="flip-left" className="row text-center" style={{overflowX:"hidden"}}>
             <div className="col-lg-9 col-md-12">
               <h2>Baked fresh daily by bakers with passion.</h2>
             </div>

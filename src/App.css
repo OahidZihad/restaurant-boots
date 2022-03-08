@@ -449,11 +449,6 @@ p {
     line-height: 2.0625rem;
   }
 
-  .navigation-wrap.scroll-on{
-    position: fixed;
-  max-width: 83%;
-  }
-
   .top-banner {
     padding: 10.875rem 0 9.375rem;
   }

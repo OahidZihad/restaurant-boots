@@ -28,9 +28,9 @@ const Header = () => {
   };
 
   return (
-    <div>
-      <header>
-        <nav
+    <div style={{overflowX:"hidden"}}>
+      <header style={{overflowX:"hidden"}}>
+        <nav style={{overflowX:"hidden"}}
           class={
             navbar
               ? "navbar navbar-expand-lg navigation-wrap scroll-on"
@@ -89,8 +89,8 @@ const Header = () => {
         </nav>
       </header>
 
-      <section id="home">
-        <div class="container-fluid px-0 top-banner">
+      <section id="home" style={{overflowX:"hidden"}}>
+        <div class="container-fluid px-0 top-banner" style={{overflowX:"hidden"}}>
           <div className="container">
             <div className="row">
               <div className="col-lg-5 col-md-6">

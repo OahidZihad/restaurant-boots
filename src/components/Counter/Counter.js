@@ -12,9 +12,9 @@ const Counter = () => {
     Aos.init({ duration: 500 });
   }, []);
   return (
-    <section data-aos="fade-up" id="counter">
-      <section className="counter-section">
-        <div className="container">
+    <section data-aos="fade-up" id="counter" style={{overflowX:"hidden"}}>
+      <section className="counter-section" style={{overflowX:"hidden"}}>
+        <div className="container" style={{overflowX:"hidden"}}>
           <div className="row text-center">
             <div className="col-md-3 mb-lg-0 mb-md-0 mb-5">
               <h2>

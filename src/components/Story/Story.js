@@ -11,11 +11,11 @@ const Story = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <section data-aos="flip-up" id="story">
-      <div className="story-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
+    <section data-aos="flip-up" id="story" style={{overflowX:"hidden"}}>
+      <div className="story-section" style={{overflowX:"hidden"}}>
+        <div className="container" style={{overflowX:"hidden"}}>
+          <div className="row" style={{overflowX:"hidden"}}>
+            <div className="col-sm-12" style={{overflowX:"hidden"}}>
               <div className="text-content">
                 <h2>
                   When a man's stomach is full it makes no difference whether he

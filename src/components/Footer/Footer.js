@@ -11,10 +11,10 @@ const Footer = () => {
     Aos.init({ duration: 1500 });
   }, []);
   return (
-    <footer  id="footer">
-      <div data-aos="flip-left" className="footer py-5">
-        <div className="container">
-          <div className="row">
+    <footer  id="footer" style={{overflowX:"hidden"}}>
+      <div data-aos="flip-left" className="footer py-5" style={{overflowX:"hidden"}}>
+        <div className="container" style={{overflowX:"hidden"}}>
+          <div className="row" style={{overflowX:"hidden"}}>
             <div className="col-md-12 text-center">
               <a href="" className="footer-link">
                 Register

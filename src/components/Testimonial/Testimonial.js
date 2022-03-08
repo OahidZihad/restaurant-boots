@@ -13,14 +13,14 @@ const Testimonial = () => {
     Aos.init({ duration: 500 });
   }, []);
   return (
-    <section id="testimonial">
-      <div className="wrapper testimonial-section">
-        <div className="container text-center">
+    <section id="testimonial" style={{overflowX:"hidden"}}>
+      <div className="wrapper testimonial-section" style={{overflowX:"hidden"}}>
+        <div className="container text-center" style={{overflowX:"hidden"}}>
           <div className="text-center pb-4">
             <h2>Testimonial</h2>
           </div>
 
-          <div className="row">
+          <div className="row" style={{overflowX:"hidden"}}>
             <div className="col-sm-12 col-lg-10 offset-lg-1">
               <div
                 data-aos="zoom-in"
@@ -50,7 +50,7 @@ const Testimonial = () => {
                     aria-label="Slide 3"
                   ></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner" style={{overflowX:"hidden"}}>
                   <div class="carousel-item active">
                     <div className="carousel-caption">
                       <img src={review1} alt="..." />

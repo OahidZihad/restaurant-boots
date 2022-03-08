@@ -11,19 +11,19 @@ const Newsletter = () => {
         Aos.init({ duration: 500 });
       }, []);
   return (
-    <section id="newsletter">
-      <div className="newsletter wrapper">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
+    <section id="newsletter" style={{overflowX:"hidden"}}>
+      <div className="newsletter wrapper" style={{overflowX:"hidden"}}>
+        <div className="container" style={{overflowX:"hidden"}}>
+          <div className="row" style={{overflowX:"hidden"}}>
+            <div className="col-sm-12" style={{overflowX:"hidden"}}>
               <div className="text-content text-center pb-4">
                 <h2 data-aos="fade-up">Hurry up! Subscribe our newsletter and get 25% Off</h2>
                 <p data-aos="fade-up">
                   Limited time offer for this month. No credit card required.
                 </p>
               </div>
-              <form action="" className="newsletter">
-                <div className="row">
+              <form action="" className="newsletter" style={{overflowX:"hidden"}}>
+                <div className="row" style={{overflowX:"hidden"}}>
                   <div className="col-md-8 col-12">
                     <input data-aos="fade-right"
                       type="email"
@@ -32,7 +32,7 @@ const Newsletter = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-md-4 col-12">
+                  <div className="col-md-4 col-12" style={{overflowX:"hidden"}}>
                     <button data-aos="fade-left" className="main-btn" type="submit">
                       Subscribe
                     </button>

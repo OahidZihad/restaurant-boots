@@ -14,11 +14,11 @@ const ExploreFood = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <section id="explore-food">
-      <div className="explore-food wrapper">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
+    <section id="explore-food" style={{overflowX:"hidden"}}>
+      <div className="explore-food wrapper" style={{overflowX:"hidden"}}>
+        <div className="container" style={{overflowX:"hidden"}}>
+          <div className="row" style={{overflowX:"hidden"}}>
+            <div className="col-sm-12" style={{overflowX:"hidden"}}>
               <div data-aos="fade-up" className="text-content text-center">
                 <h2>Explore Our Foods</h2>
                 <p>
@@ -32,8 +32,8 @@ const ExploreFood = () => {
               </div>
             </div>
           </div>
-          <div className="row pt-5">
-            <div className="col-lg-4 col-md-6 mb-lg-0 mb-5">
+          <div className="row pt-5" style={{overflowX:"hidden"}}>
+            <div className="col-lg-4 col-md-6 mb-lg-0 mb-5" style={{overflowX:"hidden"}}>
               <div className="card">
                 <img data-aos="zoom-in-down" src={img3} className="img-fluid" alt="" />
                 <div className="pt-3">

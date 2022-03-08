@@ -13,10 +13,10 @@ const About = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <section id="about">
-      <div className="about-section wrapper">
-        <div className="container">
-          <div className="row align-items-center">
+    <section id="about" style={{overflowX:"hidden"}}>
+      <div className="about-section wrapper" style={{overflowX:"hidden"}}>
+        <div className="container" style={{overflowX:"hidden"}}>
+          <div className="row align-items-center" style={{overflowX:"hidden"}}>
             <div data-aos="fade-right" className="col-lg-7 col-md-12 mb-lg-0 mb-5">
               <div className="card border-0">
                 <img src={img1} class="img-fluid" alt="" />
@@ -36,7 +36,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="container food-type">
+        <div className="container food-type" style={{overflowX:"hidden"}}>
           <div className="row align-items-center">
             <div data-aos="fade-right" className="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
               <h2>
