@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import logo from "../../images/logo.png";
 
 const Header = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -13,14 +12,15 @@ const Header = () => {
     Aos.init({ duration: 1000 });
   }, []);
 
-  let nav = document.querySelector(".navigation-wrap");
-  window.onscroll = function() {
-    if (document.documentElement.scrollTop > 20) {
-      nav.classList.add("scroll-on");
+  const [navbar, setNavbar] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 120) {
+      setNavbar(true);
     } else {
-      nav.classList.remove("scroll-on");
+      setNavbar(false);
     }
   };
+  window.addEventListener("scroll", handleScroll);
 
   const navbarClose = () => {
     let navBar = document.querySelector(".navbar-collapse.collapse");
@@ -30,7 +30,13 @@ const Header = () => {
   return (
     <div>
       <header>
-        <nav class="navbar navbar-expand-lg navigation-wrap">
+        <nav
+          class={
+            navbar
+              ? "navbar navbar-expand-lg navigation-wrap scroll-on"
+              : "navbar navbar-expand-lg navigation-wrap"
+          }
+        >
           <div class="container">
             <a class="navbar-brand" href="#home">
               <img src={logo} alt="logo" />
@@ -97,7 +103,10 @@ const Header = () => {
                   <button data-aos="fade-right" className="main-btn">
                     Order Now <i class="fa-solid fa-cart-shopping ps-3"></i>
                   </button>
-                  <button data-aos="fade-left" className="white-btn ms-lg-4 mt-lg-0 mt-4">
+                  <button
+                    data-aos="fade-left"
+                    className="white-btn ms-lg-4 mt-lg-0 mt-4"
+                  >
                     Order Now <i class="fa-solid fa-angle-right ps-3"></i>
                   </button>
                 </div>

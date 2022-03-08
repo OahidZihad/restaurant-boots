@@ -13,7 +13,7 @@ import Testimonial from './components/Testimonial/Testimonial';
 function App() {
   return (
     <div>
-      {/* <Header></Header> */}
+      <Header></Header>
       <Counter></Counter>
       <About></About>
       <Story></Story>
